@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="menu-query.css">
+    <link rel="shortcut icon" href="Resources/images/android-chrome-192x192.png" type="image/x-icon">
+    <title>Login</title>
+    <script>
+        window.onload = permReset()
+    </script>
+    
+</head>
+<body>
+    
+    <main>
+         
+        <div id="logo">
+            <img id="logoImg" src="Resources/images/LogoOnly.png" alt="logo">
+            <br>
+        </div>
+        <h1 id="logoTexto">Operação Curiosidade</h1>
+
+        <form action="">
+            
+            <div class="box1" id="idEmail"><input  type="text" name="Email" id="inpE" placeholder="Email"><br></div>
+
+            <div class="box1" id="idSenha"><input type="password" name="Senha" id="inpS" placeholder="Senha"><br></div>
+            
+            <input class="box" onclick="pages()" type="button" value="Entrar" id="idEntrar">
+
+            <input class="box" onclick="regis()" type="button" value="Cadastrar" id="idCadastrar">
+            
+        </form>
+
+    </main>
+
+</body>
+</html>

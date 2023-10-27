@@ -1,0 +1,123 @@
+
+
+@media screen and (max-width: 1200px) {
+    
+    main {
+        /* border: solid; */
+        position: absolute;
+        top: 12vh;
+        left: 34vw;
+        width: 37%;
+        height: 73%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 14px 6px #000000b3;
+    }
+    #logo {
+        margin: auto;
+        height: 47%;
+        width: 74%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    main {
+        /* border: solid; */
+        position: absolute;
+        top: 12vh;
+        left: 27vw;
+        width: 47%;
+        height: 73%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 14px 6px #000000b3;
+    }
+    #logo {
+        margin: auto;
+        height: 47%;
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    main {
+        /* border: solid; */
+        position: absolute;
+        top: 12vh;
+        left: 23vw;
+        width: 54%;
+        height: 73%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 14px 6px #000000b3;
+    }
+    
+    #logo {
+        margin: auto;
+        height: 47%;
+        width: 74%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    main {
+        /* border: solid; */
+        position: absolute;
+        top: 12vh;
+        left: 21vw;
+        width: 60%;
+        height: 73%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 14px 6px #000000b3;
+    }
+
+    #logo {
+        margin: auto;
+        height: 47%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 592px){
+    
+    main {
+        /* border: solid; */
+        position: absolute;
+        top: 12vh;
+        left: 16vw;
+        width: 70%;
+        height: 73%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0px 0px 14px 6px #000000b3;
+    }
+
+    #logo {
+        margin: auto;
+        height: 38%;
+        width: 75%;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 300px) {
+
+    #logo {
+        margin: auto;
+        height: 34%;
+        width: 100%;
+    }
+
+}
+
+
+

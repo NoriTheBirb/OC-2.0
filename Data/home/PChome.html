@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PChome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="shortcut icon" href="../../Resources/images/android-chrome-192x192.png" type="image/x-icon">
+    <script>
+        var perm = localStorage.getItem("perm")
+        var email = localStorage.getItem("email")
+        var username = localStorage.getItem("username")
+        var senha = localStorage.getItem("senha")
+
+        window.onload = load
+        
+        function load() {
+
+            if (username.length < 6) {
+                var nome = document.getElementById("nome").innerText = username
+
+            }
+            else if (username.length > 7) {
+                document.getElementById("teste").style.fontSize = '14px'
+                var nome = document.getElementById("nome").innerText = username
+            }
+            else {
+                document.getElementById("teste").style.fontSize = '16px'
+                var nome = document.getElementById("nome").innerText = username
+
+            }
+
+            if (perm == 1) {
+                location.replace("../../login.html")
+                window.alert("Você saiu, efetue o login novamente para continuar")
+            }
+            else{}
+        }    
+        function teste() {
+            var perm = localStorage.getItem("perm")
+            window.alert(perm)
+            window.alert(username) 
+        }
+    </script>
+    <title>Home</title>
+</head>
+<body>
+    
+    <!--Interface da página-->
+
+    <div id="sideBarLeft">
+
+        <div id="logo">
+            <img src="../../Resources/images/LogoOnly.png" alt="">
+        </div>
+        <h1 id="logoT">Operação Curiosidade</h1>
+        
+
+        <div id="barraP">
+            <div id="pesquisa">
+                <input placeholder="Pesquisar..." type="pesquisa" name="pesquisa" id="Ipesquisa">
+            </div>
+            <div id="botao">
+                <span id="pes" class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+
+        </div>
+
+        <div id="perfil">
+
+            <div id="perfilUsuario">
+                <img src="../../Resources/images/10100130.png" alt="">
+            </div>
+
+            <div id="nomeUsuario">
+                <p id="teste">Boas vindas, <a id="nome" href="#"><a></p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="sideBarDown">
+
+        <div id="nav1">
+            <nav id="menu">
+                <span id="navicon1" class="material-symbols-outlined">home</span><a class="menu" href="PChome.html"><p id="menup">Home</p></a>
+                <br>
+                <hr>
+                <span id="navicon2" class="material-symbols-outlined">Person_Add</span><a class="menu" href="../cadastro/PCcadastro.html"><p id="menup">Cadastro</p></a>
+                <br>
+                <hr>
+                <span id="navicon3" class="material-symbols-outlined">insert_chart</span><a class="menu" href="../relatorio/PCrelatoriomain.html"><p id="menup">Relatório</p></a>   
+                <br>
+                <span id="navicon4" class="material-symbols-outlined">logout</span><a class="menu" href="../../login.html">Sair</a>
+            </nav>
+
+
+        </div>
+
+    </div>
+
+
+    <!--Corpo da página-->
+
+    <main>
+        
+        <div class="block" id="total">
+            <p class="numbers" id="NT">100</p>
+            <p class="Btext" id="TT">Total de cadastros</p>
+        </div>
+        <div class="block" id="cadastros">
+            <p class="numbers" id="NC">10</p>
+            <p class="Btext" id="TC">Cadastros no último mês</p>
+        </div>
+        <div class="block" id="pendente">
+            <p class="numbers" id="NP">10</p>
+            <p class="Btext" id="TP">Cadastros com pendência</p>
+        </div>
+
+        <div id="tabela">
+            <h2 id="TTitulo">Últimos Cadastros</h2>
+            <table id="tabe">
+                <tr>
+                    <td class="head">Nome</td>
+                    <td class="head">Email</td>
+                    <td class="head">Status</td>
+                </tr>
+                <tr>
+                    <td>Stephanie Nichols</td>
+                    <td>stephanienichols@gmail.com</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Jeffrey Kane</td>
+                    <td>jeffrey_kane@yahoo.com</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Darin Miller</td>
+                    <td>darinmiller01@gmail.com</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Andrew Stuart</td>
+                    <td>andrewstuar@outlook.com</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Valerie Aguilar</td>
+                    <td>valerie_aguilar@gmail.com</td>
+                    <td id="inativo">Inativo</td>
+                </tr>
+            </div>
+            </table>
+            
+        </div>
+        
+
+    </main>
+
+
+
+</body>
+</html>

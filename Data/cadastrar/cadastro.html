@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="BD.js"></script>
+    <link rel="shortcut icon" href="../../Resources/images/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="menu-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <!--Corpo da página-->
+    <main>
+
+        <!--Botão de voltar-->
+        <span onclick="back()" id="arrow" class="material-symbols-outlined">
+            arrow_back_ios_new
+            </span>
+
+
+        <!--Form com input para nome de usuario, senha e email--> 
+        
+        <form action="">
+            
+            <div class="box1" id="idUser"><input type="text" name="User" id="inpU" placeholder="Nome de Usuario"><br></div>
+
+            <div class="box1" id="idEmail"><input  type="text" name="Email" id="inpE" placeholder="Email"><br></div>
+
+            <div class="box1" id="idSenha"><input type="password" name="Senha" id="inpS" placeholder="Senha"><br></div>
+
+            <input class="box" onclick="cadastro()" type="button" value="Cadastrar" id="idCadastrar">
+        
+            
+        </form>
+
+    </main>
+
+</body>
+</html>
